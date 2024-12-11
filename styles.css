@@ -92,6 +92,9 @@ header .wrapper {
     gap: 14px;
 }
 /************************* PROJECTS *********************************/
+.projects .wrapper {
+    margin-bottom: 4em;
+}
 .grid-container {
     width: 100%;
     display: grid;
@@ -127,19 +130,21 @@ footer * {
     color: var(--white);
 }
 .contact {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    display: grid;
+    gap: 1.2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 footer .wrapper,
 .contact-details div {
     display: flex;
     gap: 12px;
 }
+footer .wrapper {
+    justify-content: space-between;
+}
 .footer-image {
-    width: 300px;
+    width: 350px;
 }
 footer .social-icons {
     justify-self: flex-start;
@@ -172,8 +177,7 @@ footer .social-icons {
         padding: 2em 5%;
     }
     .about-me{
-        display: flex;
-        flex-direction: column;
+        display: grid;
         box-shadow: none;
         padding-top: 0;
     }
@@ -181,6 +185,11 @@ footer .social-icons {
         width: calc(100% + 36px);
         margin: 0 0 1em;
         transform: translateX(-18px);
+    }
+    .about-me h2,
+    .about-me .social-icons,
+    .contact h2 {
+        justify-self: center;
     }
     footer .wrapper {
         flex-direction: column;
